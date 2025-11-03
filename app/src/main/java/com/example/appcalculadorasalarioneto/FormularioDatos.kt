@@ -46,7 +46,7 @@ fun RecopilarDatos(navController: NavHostController) {
     el grado de discapacidad, el salario bruto y el número de pagas.
     Deben de ser String para el TextField*/
     var edad by remember { mutableStateOf("") }
-    var estadoCivil by remember { mutableStateOf("Soltero/a") }
+    var estadoCivil by remember { mutableStateOf("Soltero,a") }
     var hijos by remember { mutableStateOf("") }
     var discapacidad by remember {mutableStateOf("Ninguna")}
     var grupoProfesional by remember { mutableStateOf("Elige grupo")}
@@ -55,12 +55,12 @@ fun RecopilarDatos(navController: NavHostController) {
 
     // Lista de los diferentes estados
     val listaEstadoCivil = listOf(
-        "Soltero/a",
-        "Casado/a",
-        "Viudo/a",
-        "Divorciado/a",
-        "Separado/a (legalmente)",
-        "Unión de hecho/civil",
+        "Soltero,a",
+        "Casado,a",
+        "Viudo,a",
+        "Divorciado,a",
+        "Separado,a (legalmente)",
+        "Unión de hecho,civil",
         "Otros estados")
     //Lista de grados de discapacidad
     val listaDiscapacidad = listOf(
